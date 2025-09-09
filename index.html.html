@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M <span style="font-family:'Brush Script MT', cursive;">&</span> Q Fitness & Wellness Center</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #111 url("logo_background_tile.png") repeat;
+      color: #eee;
+    }
+    header {
+      background: url('pic1.jpeg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+    header h1 {
+      font-size: 3em;
+      background: rgba(0,0,0,0.6);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    header h1 span.and {
+      font-family: "Brush Script MT", cursive;
+      font-size: 1.2em;
+      color: #f39c12;
+      margin: 0 5px;
+    }
+    nav {
+      background: #000;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #f39c12;
+    }
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #f39c12;
+      margin-bottom: 20px;
+    }
+    .services, .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .services div, .pricing div {
+      background: #222;
+      color: #eee;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.4);
+    }
+    .pricing div {
+      border: 2px solid #f39c12;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.4);
+    }
+    .newsletter {
+      background: #000;
+      padding: 30px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+    .newsletter input {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      border: none;
+      width: 200px;
+    }
+    .newsletter button {
+      padding: 10px 20px;
+      background: #f39c12;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .newsletter button:hover {
+      background: #d35400;
+    }
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>M <span class="and">&</span> Q Fitness & Wellness Center</h1>
+    <p>Your journey to a healthier life starts here</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#hours">Hours</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div>
+        <h3>Personal Training</h3>
+        <p>Work one-on-one with expert trainers to reach your fitness goals.</p>
+      </div>
+      <div>
+        <h3>Wellness Programs</h3>
+        <p>Yoga, meditation, and nutrition coaching for your overall well-being.</p>
+      </div>
+      <div>
+        <h3>Modern Gym</h3>
+        <p>State-of-the-art equipment for cardio, strength, and conditioning.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Membership Plans</h2>
+    <div class="pricing">
+      <div><h3>Registration Fee</h3><p>NGN 5,000</p></div>
+      <div><h3>Walk-in Session</h3><p>NGN 2,500</p></div>
+      <div><h3>1 Month</h3><p>NGN 25,000</p></div>
+      <div><h3>3 Months</h3><p>NGN 71,250</p></div>
+      <div><h3>6 Months</h3><p>NGN 138,750</p></div>
+      <div><h3>1 Year</h3><p>NGN 270,000</p></div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Our Gym Gallery</h2>
+    <div class="gallery">
+      <img src="pic1.jpeg" alt="Gym Photo 1">
+      <img src="pic2.jpeg" alt="Gym Photo 2">
+    </div>
+  </section>
+
+  <section id="hours">
+    <h2>Working Hours</h2>
+    <p>🕒 Monday – Friday: 6:00 AM – 9:00 PM</p>
+    <p>🕒 Saturday: 7:00 AM – 7:00 PM</p>
+    <p>🕒 Sunday: 8:00 AM – 5:00 PM</p>
+  </section>
+
+  <section id="newsletter">
+    <h2>Stay Updated</h2>
+    <p>Subscribe to our newsletter and never miss updates!</p>
+    <form class="newsletter">
+      <input type="text" name="name" placeholder="Enter your name" required>
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Address: 53a Adediran Ajao Cres, Anthony, Lagos 100232, Lagos</p>
+    <p>📞 Phone: 0803 321 0667</p>
+    <p>📧 Email: info@mqfitness.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 M & Q Fitness & Wellness Center | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
